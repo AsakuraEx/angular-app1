@@ -13,8 +13,7 @@ import { RowItemComponent } from '../row-item/row-item.component';
     InvoiceViewComponent,
     ClientViewComponent,
     CompanyViewComponent, 
-    ListItemsComponent, 
-    RowItemComponent
+    ListItemsComponent,
   ],
   templateUrl: './invoice.component.html',
 })
