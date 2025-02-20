@@ -4,6 +4,7 @@ export const invoiceData: Invoice = {
 
     id: 1,
     name: 'Componentes de PC',
+    total: 0,
     client: {
         id: 1,
         name: 'Andres',
@@ -26,19 +27,22 @@ export const invoiceData: Invoice = {
             id: 1,
             product: 'CPU Intel i9',
             price: 599,
-            quantity: 1
+            quantity: 1,
+            total: 0
         },
         {
             id: 2,
             product: 'Corsair Teclado Mecanico',
             price: 399,
-            quantity: 2
+            quantity: 2,
+            total: 0
         },
         {
             id: 3,
             product: 'Monitor Asus',
             price: 899,
-            quantity: 3
+            quantity: 3,
+            total: 0
         },
     ]
 

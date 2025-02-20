@@ -1,0 +1,19 @@
+<form (ngSubmit)="SubmitEventHandler()" #invoiceForm="ngForm">
+    <div class="mb-2">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input 
+            type="text" 
+            id="nombre" 
+            [(ngModel)]="nombre" 
+            name="client" 
+            class="form-control"
+            [class.is-invalid]="invalid" 
+            (input)="resetValidation()"
+            required 
+        >
+    </div>
+    @if (invalid){
+        <p class="form-text text-danger">El nombre es requerido.</p>
+    }
+    <button class="btn btn-primary" type="submit" [disabled]="invalid">Click me!</button>
+</form>
